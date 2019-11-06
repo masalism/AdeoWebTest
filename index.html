@@ -11,9 +11,10 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="container">
-            <div class="top-nav">
+            <nav class="top-nav">
                 <ul class="top-nav__list">
                     <li class="top-nav__item"><a href="#" class="top-nav__link">MENU</a></li>
                     <li class="top-nav__item"><a href="#" class="top-nav__link">SOME TEXT</a></li>
@@ -21,23 +22,56 @@
                     <li class="top-nav__item"><a href="#" class="top-nav__link">ONE MORE</a></li>
                     <li class="top-nav__item"><a href="#" class="top-nav__link">AND LAST ONE</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="header__main">
-                <div class="header__banner"><span class="header__banner--bold">DEMO</span><span
-                        class="header__banner--light">SITE</span></div>
+                <a href="#" class="header__banner"><span class="header__banner--bold">DEMO</span><span
+                        class="header__banner--light">SITE</span></a>
                 <nav class="main-nav">
                     <ul class="main-nav__list">
                         <li class="main-nav__item"><a href="#" class="main-nav__link">HOME</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">SERVICE</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">WORKS</a></li>
+                        <div class="main-nav__item main-nav__drop">
+                            <li class="main-nav__dropbtn"><a href="#" class="main-nav__link">WORKS</a></li>
+                            <div class="main-nav__drop-content">
+                                <img src="img/Rectangle 1.png" alt="" class="main-nav__fig1">
+                                <img src="img/Rectangle.png" alt="" class="main-nav__fig2">
+                                <ul class="main-nav__drop--list">
+                                    <li class="main-nav__drop--item"><a href="#" class="main-nav__drop--link">ALL</a>
+                                    </li>
+                                    <li class="main-nav__drop--item"><a href="#" class="main-nav__drop--link">GRAPHIC</a>
+                                    </li>
+                                    <li class="main-nav__drop--item"><a href="#" class="main-nav__drop--link">DESIGN</a>
+                                    </li>
+                                    <li class="main-nav__drop--item"><a href="#" class="main-nav__drop--link">LOGO</a>
+                                    </li>
+                                    <li class="main-nav__drop--item"><a href="#" class="main-nav__drop--link">WEBSITE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">ABOUT</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
-
         </div>
     </header>
+    <!-- end of header -->
+
+    <!-- welcome and design -->
+    <section>
+        <div class="container">
+            <div class="welcome">
+                <h1>WELCOME</h1>
+                <p></p>
+            </div>
+            <div class="design">
+
+            </div>
+        </div>
+    </section>
+    <!-- end of welcome and design -->
+
 
     <script src="js/index.js"></script>
 </body>

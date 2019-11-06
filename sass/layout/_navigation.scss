@@ -62,4 +62,53 @@
             color: $color-grey-dark;
         }
     }
+
+    &__drop-content {  
+        position: absolute;
+        min-width: 15.5rem;
+        z-index: 1;
+        display: none;      
+    }
+
+    &__drop--list {
+        position: relative;
+        margin-top: 3.6rem;
+        left: -4.75rem;
+        list-style: none;
+    }
+
+    &__drop--item {
+        font-size: 1.1rem;
+        font-weight: 800;
+        display: block;
+        
+    }
+
+    &__drop--link {
+        text-decoration: none;
+        color: $color-white;
+        display: block;
+        padding: 1rem 1rem 1rem 2rem;
+      
+        &:hover {
+            color: $color-grey-dark;
+            background-color: $color-white;
+        }
+    }
+
+    &__fig1 {
+        position: absolute;
+        margin-top: 1.3rem;
+        padding-left: 2rem;
+    }
+
+    &__fig2 {
+        position: absolute;
+        margin-top: 2.1rem;
+        left: -5rem;
+    }
+
+    &__drop:hover &__drop-content {
+        display: block;
+    }
 }

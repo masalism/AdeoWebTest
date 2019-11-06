@@ -31,7 +31,8 @@ body {
     align-items: center; }
   .header__banner {
     font-size: 2.7rem;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
     .header__banner--bold {
       font-weight: 800; }
     .header__banner--light {
@@ -73,3 +74,42 @@ body {
 
 .main-nav__link:hover, .main-nav__link:active {
   color: #1e2123; }
+
+.main-nav__drop-content {
+  position: absolute;
+  min-width: 15.5rem;
+  z-index: 1;
+  display: none; }
+
+.main-nav__drop--list {
+  position: relative;
+  margin-top: 3.6rem;
+  left: -4.75rem;
+  list-style: none; }
+
+.main-nav__drop--item {
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: block; }
+
+.main-nav__drop--link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 1rem 1rem 1rem 2rem; }
+  .main-nav__drop--link:hover {
+    color: #1e2123;
+    background-color: #fff; }
+
+.main-nav__fig1 {
+  position: absolute;
+  margin-top: 1.3rem;
+  padding-left: 2rem; }
+
+.main-nav__fig2 {
+  position: absolute;
+  margin-top: 2.1rem;
+  left: -5rem; }
+
+.main-nav__drop:hover .main-nav__drop-content {
+  display: block; }
