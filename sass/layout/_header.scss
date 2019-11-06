@@ -6,18 +6,23 @@
     position: relative;
 
     &__main {
-
+        padding-top: 2.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__banner {
-
+        font-size: 2.7rem;
+        color: $color-white;
 
         &--bold {
-
+            font-weight: 800;
         }
 
         &--light {
-            
+            font-weight: 300;
         }
     }
 }
