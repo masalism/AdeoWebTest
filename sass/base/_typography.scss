@@ -1,0 +1,41 @@
+.heading-1 {
+    font-size: 4.1rem;
+    color: $color-white;
+    font-weight: 800;
+
+    &::after {
+        content: '.';
+        font-size: 0;
+        display: block;
+        height: 10px;
+        width: 60px;
+        background: $color-white;
+        margin: 4rem 0;
+    }
+}
+
+.heading-2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+
+    &__white {
+        color: $color-white;
+    }
+
+    &__grey {
+        color: $color-grey-dark;
+    }
+}
+
+.paragraph {
+    font-size: 1.7rem;
+    line-height: 2rem;
+
+    &__white {
+        color: $color-white;
+    }
+
+    &__grey {
+        color: $color-grey-dark;
+    }
+}

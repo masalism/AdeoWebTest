@@ -11,18 +11,89 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 400; }
 
 .container {
   max-width: 112rem;
   margin: 0 auto; }
 
+.heading-1 {
+  font-size: 4.1rem;
+  color: #fff;
+  font-weight: 800; }
+  .heading-1::after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    height: 10px;
+    width: 60px;
+    background: #fff;
+    margin: 4rem 0; }
+
+.heading-2 {
+  font-size: 1.9rem;
+  font-weight: 800; }
+  .heading-2__white {
+    color: #fff; }
+  .heading-2__grey {
+    color: #1e2123; }
+
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 2rem; }
+  .paragraph__white {
+    color: #fff; }
+  .paragraph__grey {
+    color: #1e2123; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #3b91c2;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 0.8rem;
+  float: right;
+  text-decoration: none; }
+  .btn__white {
+    color: #fff;
+    border-color: #fff;
+    border: 3px solid #fff; }
+
+.about {
+  margin: 7rem 0; }
+  .about__wrapper {
+    display: flex; }
+  .about__welcome {
+    margin-right: 8rem;
+    background-color: #448ccb;
+    display: block;
+    width: 32rem;
+    height: 55rem;
+    padding-left: 5.3rem;
+    padding-top: 6.5rem;
+    padding-right: 5rem; }
+    .about__welcome--p {
+      padding-bottom: 12rem; }
+  .about__text-block {
+    padding-left: 8rem;
+    padding-top: 4rem;
+    padding-right: 8rem; }
+  .about__p {
+    padding-top: 2.4rem; }
+  .about__design {
+    display: block;
+    width: 64rem;
+    height: 55rem;
+    background-color: #d7d7d7; }
+
 .header {
   background-color: #448ccb;
   height: 13rem;
   background-size: cover;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
   .header__main {
     padding-top: 2.4rem;
     display: flex;
