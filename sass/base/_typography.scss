@@ -1,6 +1,5 @@
 .heading-1 {
     font-size: 4.1rem;
-    color: $color-white;
     font-weight: 800;
 
     &::after {
@@ -9,8 +8,23 @@
         display: block;
         height: 10px;
         width: 60px;
-        background: $color-white;
         margin: 4rem 0;
+    }
+
+    &__white {
+        color: $color-white;
+
+        &::after {
+            background: $color-white;
+        }
+    }
+
+    &__grey {
+        color: $color-grey-dark;
+
+        &::after {
+            background: $color-grey-dark;
+        }
     }
 }
 
@@ -25,6 +39,12 @@
     &__grey {
         color: $color-grey-dark;
     }
+}
+
+.heading-3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: $color-grey-dark;
 }
 
 .paragraph {
