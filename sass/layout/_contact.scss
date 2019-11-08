@@ -1,0 +1,26 @@
+.contact {
+    margin: 7rem 0;
+
+    &__wrapper {
+        display: flex;
+        margin-top: 8rem;
+    }
+
+    &__box {
+        display: block;
+        width: 53rem;
+    }
+
+    &__p {
+        &:not(:last-child) {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    &__form {
+        margin-top: 13rem;
+        margin-left: 8rem;
+        display: inline-block;
+        width: 36rem;
+    }
+}

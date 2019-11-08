@@ -37,7 +37,7 @@
     &__block {
         height: 28rem;
         width: 77.5rem;
-        display:block;
+        display: block;
         position: absolute;
         background-color: $color-white;
         margin-top: 4.5rem;
@@ -64,7 +64,6 @@
         font-size: 1.7rem;
         list-style: none;
         padding: 1rem 0;
-
 
         &:not(:last-child) {
             border-bottom: 1px solid black;

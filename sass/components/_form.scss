@@ -1,0 +1,31 @@
+.form {
+    
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        width: 36rem;
+        font-size: 1.5rem;
+        color: $color-grey-dark;
+        padding: 1.5rem;
+        border: 3px solid $color-grey-light-2;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border: 3px solid $color-grey-dark;
+        }
+    }
+
+    &__textarea {
+        height: 17.5rem;
+    }
+}

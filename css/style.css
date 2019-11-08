@@ -61,17 +61,46 @@ body {
 .btn {
   font-size: 1.5rem;
   font-weight: 800;
-  background-color: #3b91c2;
   box-shadow: none;
   display: inline-block;
   text-align: center;
   padding: 1rem 0.8rem;
-  float: right;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .btn__white {
     color: #fff;
     border-color: #fff;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    background-color: #3b91c2;
+    float: right; }
+  .btn__blue {
+    color: #0c9aec;
+    border-color: #0c9aec;
+    border: 3px solid #0c9aec;
+    background-color: #fff; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.form__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem; }
+
+.form__input {
+  width: 36rem;
+  font-size: 1.5rem;
+  color: #1e2123;
+  padding: 1.5rem;
+  border: 3px solid #e8e8e9;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    border: 3px solid #1e2123; }
+
+.form__textarea {
+  height: 17.5rem; }
 
 .about {
   margin: 7rem 0; }
@@ -99,6 +128,22 @@ body {
     width: 64rem;
     height: 55rem;
     background-color: #d7d7d7; }
+
+.contact {
+  margin: 7rem 0; }
+  .contact__wrapper {
+    display: flex;
+    margin-top: 8rem; }
+  .contact__box {
+    display: block;
+    width: 53rem; }
+  .contact__p:not(:last-child) {
+    margin-bottom: 2.8rem; }
+  .contact__form {
+    margin-top: 13rem;
+    margin-left: 8rem;
+    display: inline-block;
+    width: 36rem; }
 
 .development {
   background-color: #448ccb;
@@ -142,6 +187,46 @@ body {
     padding: 1rem 0; }
     .development__item:not(:last-child) {
       border-bottom: 1px solid black; }
+
+.footer {
+  height: 15rem;
+  background-color: #1e2123;
+  background-size: cover;
+  width: 100%; }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .footer__text {
+    margin-top: 5rem;
+    display: block;
+    width: 55rem; }
+  .footer__p {
+    font-size: 1.4rem;
+    color: #6b6c6c;
+    line-height: 2rem; }
+  .footer__nav {
+    margin-top: 4rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s; }
+    .footer__link:hover {
+      color: #448ccb; }
+  .footer__copy {
+    float: right; }
+    .footer__copy--text {
+      font-size: 1.1rem;
+      color: #fff; }
+    .footer__copy--bold {
+      font-weight: 700; }
 
 .header {
   background-color: #448ccb;
