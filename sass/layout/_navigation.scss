@@ -1,5 +1,10 @@
 .top-nav {
     padding-top: 1.7rem;
+
+    @include respond(lg) {
+        display: flex;
+        justify-content: center;
+    }
     
     &__list {
         list-style: none;

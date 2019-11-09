@@ -1,14 +1,26 @@
 .contact {
     margin: 7rem 0;
+    @include respond(lg) {
+        margin: 4rem 0;
+    }
 
     &__wrapper {
         display: flex;
         margin-top: 8rem;
+
+        @include respond(lg) {
+            flex-direction: column;
+            margin-top: 3rem;
+            align-items: center;
+        }
     }
 
     &__box {
         display: block;
         width: 53rem;
+        @include respond(lg) {
+            width: 90%;
+        }
     }
 
     &__p {
@@ -22,5 +34,11 @@
         margin-left: 8rem;
         display: inline-block;
         width: 36rem;
+
+        @include respond(lg) {
+            width: 90%;
+            margin-top: 3rem;
+            margin-left: 0;
+        }
     }
 }

@@ -3,7 +3,6 @@
     height: 13rem;
     background-size: cover;
     width: 100%;
-  
 
     &__main {
         padding-top: 2.4rem;
@@ -11,12 +10,22 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @include respond(lg) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 1.5rem;
+        }
     }
 
     &__banner {
         font-size: 2.7rem;
         color: $color-white;
         text-decoration: none;
+        
+        @include respond(lg) {
+            margin-bottom: 1.5rem;
+        }
 
         &--bold {
             font-weight: 800;

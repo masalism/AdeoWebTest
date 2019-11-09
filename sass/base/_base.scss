@@ -9,6 +9,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    // @include respond(xxl) {
+    //     font-size: 75%;
+    // }
 }
 
 body {
@@ -20,5 +24,25 @@ body {
 .container {
     max-width: 112rem;
     margin: 0 auto;
+
+    @include respond(xl) {
+        max-width: 95rem;
+    }
+
+    @include respond(lg) {
+        max-width: 85rem;
+    }
+
+    @include respond(md) {
+        max-width: 65rem;
+    }
+
+    @include respond(sm) {
+        max-width: 56rem;
+    }
+
+    // @include respond(xxl) {
+    //     max-width: 130rem;
+    // }
 
 }

@@ -1,0 +1,28 @@
+//MEDIA QUERY MANAGER
+
+// 0 - 575px: sm
+// 576 - 767px: md
+// 768 - 991px: lg
+// 992 - 1140 xl
+// 1800px + : xxl
+
+//1em - 16px
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+        @media (max-width: 36em) { @content }; 
+    }
+    @if $breakpoint == md {
+        @media (max-width: 48em) { @content }; 
+    }
+    @if $breakpoint == lg {
+        @media (max-width: 62em) { @content }; 
+    }
+    @if $breakpoint == xl {
+        @media (max-width: 71.25em) { @content };
+    }
+    @if $breakpoint == xxl {
+        @media (min-width: 112.5em) { @content };
+    }
+}

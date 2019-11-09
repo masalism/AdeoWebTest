@@ -1,4 +1,5 @@
 .form {
+
     
     &__group:not(:last-child) {
         margin-bottom: 1rem;
@@ -18,6 +19,10 @@
         padding: 1.5rem;
         border: 3px solid $color-grey-light-2;
         transition: all .3s;
+
+        @include respond(lg) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;

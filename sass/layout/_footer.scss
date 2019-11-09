@@ -4,27 +4,50 @@
     background-size: cover;
     width: 100%;
 
-    &__wrapper {
-      
+    @include respond(lg) {
+        height: 17rem;
+    }
+
+    @include respond(md) {
+        height: 19rem;
+    }
+
+    &__wrapper { 
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between; 
+
+        @include respond(lg) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__text {
         margin-top: 5rem;
         display: block;
         width: 55rem;
+        @include respond(lg) {
+            margin-top: 3rem;
+            width: 90%;
+        }
     }
 
     &__p {
         font-size: 1.4rem;
         color: $color-grey-dark-2;
         line-height: 2rem;
+
+        @include respond(md) {
+            font-size: 1.2rem;
+        }
     }
 
     &__nav {
         margin-top: 4rem;
+
+        @include respond(lg) {
+            margin-top: 2rem;
+        }
     }
 
     &__list {
@@ -52,6 +75,11 @@
 
     &__copy {
         float: right;
+        @include respond(lg) {
+            margin-top: 3rem;
+            float: none;
+            text-align: center;
+        }
         &--text {
             font-size: 1.1rem;
             color: $color-white;
