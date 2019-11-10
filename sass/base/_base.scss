@@ -10,8 +10,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
+    @include respond(md) {
+        font-size: 50%;
+    }
+
     // @include respond(xxl) {
-    //     font-size: 75%;
+    //     font-size: 80%;
     // }
 }
 
@@ -26,23 +30,27 @@ body {
     margin: 0 auto;
 
     @include respond(xl) {
-        max-width: 95rem;
-    }
-
-    @include respond(lg) {
-        max-width: 85rem;
-    }
-
-    @include respond(md) {
-        max-width: 65rem;
-    }
-
-    @include respond(sm) {
-        max-width: 56rem;
+        width: 90%;
     }
 
     // @include respond(xxl) {
-    //     max-width: 130rem;
+    //     max-width: 180rem;
+    // }
+
+    // @include respond(lg) {
+    //     width: 90%;
+    // }
+
+    // @include respond(md) {
+    //     max-width: 65rem;
+    // }
+
+    // @include respond(sm) {
+    //     max-width: 56rem;
+    // }
+
+    // @include respond(xxl) {
+    //     width: 80%;
     // }
 
 }

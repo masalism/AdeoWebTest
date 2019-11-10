@@ -68,11 +68,18 @@
         }
     }
 
+    &__drop {
+ 
+    }
+
     &__drop-content {  
         position: absolute;
         min-width: 15.5rem;
         z-index: 1;
         display: none;      
+        @include respond(md) {
+            min-width: 19.5rem;
+        }
     }
 
     &__drop--list {
@@ -80,12 +87,20 @@
         margin-top: 3.6rem;
         left: -4.75rem;
         list-style: none;
+        @include respond(md) {
+            left: -6.8rem;
+            margin-top: 5.1rem;
+        }
     }
 
     &__drop--item {
         font-size: 1.1rem;
         font-weight: 800;
         display: block;
+        
+        @include respond(md) {
+            font-size: 1.4rem;
+        }
     }
 
     &__drop--link {
@@ -110,6 +125,9 @@
         position: absolute;
         margin-top: 2.1rem;
         left: -5rem;
+        @include respond(md) {
+            left: -7rem;
+        }
     }
 
     &__drop:hover &__drop-content {

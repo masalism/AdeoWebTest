@@ -7,6 +7,7 @@
     padding: 1rem 0.8rem;
     text-decoration: none;
     cursor: pointer;
+    transition: all .2s;
 
     &__white {
         color: $color-white;
@@ -14,6 +15,13 @@
         border: 3px solid $color-white;
         background-color: $color-blue;
         float: right;
+
+        &:hover {
+            color: $color-grey-dark;
+            border-color: $color-grey-dark;
+            border: 3px solid $color-grey-dark;
+            background-color: $color-blue;
+        }
     }
 
     &__blue {
@@ -21,5 +29,12 @@
         border-color: $color-blue-2;
         border: 3px solid $color-blue-2;
         background-color: $color-white;
+
+        &:hover {
+            color: $color-grey-dark;
+            border-color: $color-grey-dark;
+            border: 3px solid $color-grey-dark;
+            background-color: $color-white;
+        }
     }
 }
