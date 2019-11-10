@@ -69,50 +69,71 @@
     }
 
     &__drop {
- 
-    }
-
-    &__drop-content {  
-        position: absolute;
-        min-width: 15.5rem;
-        z-index: 1;
-        display: none;      
-        @include respond(md) {
-            min-width: 19.5rem;
+        &-content {  
+            position: absolute;
+            min-width: 15.5rem;
+            z-index: 1;
+            display: none;      
+            @include respond(md) {
+                min-width: 19.5rem;
+            }
+            @include respond(xxl) {
+                min-width: 12rem;
+            }
         }
-    }
 
-    &__drop--list {
-        position: relative;
-        margin-top: 3.6rem;
-        left: -4.75rem;
-        list-style: none;
-        @include respond(md) {
-            left: -6.8rem;
-            margin-top: 5.1rem;
+        &--list {
+            position: relative;
+            margin-top: 3.6rem;
+            left: -4.75rem;
+            list-style: none;
+            @include respond(md) {
+                left: -6.8rem;
+                margin-top: 5.1rem;
+            }
+            @include respond(xxl) {
+                margin-top: 2.3rem;
+                left: -3.25rem;
+            }
         }
-    }
 
-    &__drop--item {
-        font-size: 1.1rem;
-        font-weight: 800;
-        display: block;
-        
-        @include respond(md) {
-            font-size: 1.4rem;
+        &--item {
+            font-size: 1.1rem;
+            font-weight: 800;
+            display: block;
+    
+            // @include respond(xxl) {
+            //     font-size: 1.1rem;
+            // }
+            
+            @include respond(md) {
+                font-size: 1.4rem;
+            }
+    
+            @include respond(xxl) {
+                font-size: .9rem;
+            }
         }
-    }
 
-    &__drop--link {
-        text-decoration: none;
-        color: $color-white;
-        display: block;
-        padding: 1rem 1rem 1rem 2rem;
-      
-        &:hover {
-            color: $color-grey-dark;
-            background-color: $color-white;
+        &--link {
+            text-decoration: none;
+            color: $color-white;
+            display: block;
+            padding: 1rem 1rem 1rem 2rem;
+    
+            @include respond(xxl) {
+                padding: .9rem;
+            }
+          
+            &:hover {
+                color: $color-grey-dark;
+                background-color: $color-white;
+            }
         }
+        &:hover &-content {
+            display: block;
+        }
+
     }
 
     &__fig1 {
@@ -128,9 +149,10 @@
         @include respond(md) {
             left: -7rem;
         }
-    }
 
-    &__drop:hover &__drop-content {
-        display: block;
-    }
+        @include respond(xxl) {
+            left: -3.5rem;
+            margin-top: 1.9rem;
+        }
+    }  
 }

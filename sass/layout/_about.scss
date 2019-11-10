@@ -68,11 +68,11 @@
         }
 
         @include respond(md) {
-            height: 50rem;
+            height: 56rem;
         }
 
         @include respond(sm) {
-            height: 47rem;
+            height: 48rem;
         }
     }
 }

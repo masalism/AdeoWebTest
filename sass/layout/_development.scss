@@ -12,6 +12,10 @@
         height: 64rem;
     }
 
+    @include respond(sm) {
+        height: 68rem;
+    }
+
     &__wrapper {
         display: flex;
         padding-top: 10rem;
@@ -52,6 +56,9 @@
 
     &__wire {
         width: 90%;
+        @include respond(lg) {
+            margin-top: 1.5rem;
+        }
 
         &--p {
             margin-top: 2.3rem;
@@ -68,7 +75,7 @@
         }
 
         @include respond(md) {
-            width: 20rem;
+            width: 23rem;
         }
 
         @include respond(sm) {
@@ -126,7 +133,7 @@
 
         @include respond(md) {
             margin-top: 11rem;
-            width: 20rem;
+            width: 23rem;
         }
         @include respond(sm) {
             width: 18rem;

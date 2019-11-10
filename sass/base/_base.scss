@@ -14,9 +14,9 @@ html {
         font-size: 50%;
     }
 
-    // @include respond(xxl) {
-    //     font-size: 80%;
-    // }
+    @include respond(xxl) {
+        font-size: 80%;
+    }
 }
 
 body {

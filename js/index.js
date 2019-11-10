@@ -23,7 +23,7 @@ function loadPosts() {
 }
 
 loadPosts()
- 
+
 console.log(allPosts)
 
 item1.addEventListener('click', function () {
