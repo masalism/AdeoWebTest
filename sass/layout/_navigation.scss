@@ -39,6 +39,8 @@
 }
 
 .main-nav {
+    overflow: hidden;
+
     &__list {
         list-style: none;
     }
@@ -49,8 +51,7 @@
         display: inline-block;
 
         &:not(:last-child) {
-            padding-right: 3.3rem;
-            
+            padding-right: 3.3rem; 
         }
     }
 
@@ -156,3 +157,4 @@
         }
     }  
 }
+ 

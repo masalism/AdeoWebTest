@@ -30,27 +30,6 @@ body {
     margin: 0 auto;
 
     @include respond(xl) {
-        width: 90%;
+        width: 95%;
     }
-
-    // @include respond(xxl) {
-    //     max-width: 180rem;
-    // }
-
-    // @include respond(lg) {
-    //     width: 90%;
-    // }
-
-    // @include respond(md) {
-    //     max-width: 65rem;
-    // }
-
-    // @include respond(sm) {
-    //     max-width: 56rem;
-    // }
-
-    // @include respond(xxl) {
-    //     width: 80%;
-    // }
-
 }

@@ -46,5 +46,3 @@ function insertPosts(title, body) {
     document.getElementById('title').innerHTML = title
     document.getElementById('body').innerHTML = body
 }
-
-
